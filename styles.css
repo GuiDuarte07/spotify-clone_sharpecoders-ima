@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.logo {
+  background: url(img/logo.png);
+}
+
+.left-bar-icon {
+  border-right: 1px solid white;
+}
+
+#navbar {
+  width: 100vw;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#navbar .nav-items {
+
+}
+
+#navbar .nav-items .nav-item {
+  font-weight: bold;
+  transition: all 300ms ease;
+}
+
+.nav-items:hover {
+  /*cursor: pointer;*/
+  color: rgb(85, 85, 85)
+}
