@@ -67,39 +67,50 @@ ul, li {
   width: 100%;
   height: 100vh;
   background: url(img/showcase.webp);
+  background-repeat:no-repeat;
+  background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .main-container {
-  
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ gap: 0.7rem;
 }
 
 .principal-text {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 3rem;
   color: white;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .subtitle-text {
   font-weight: bold;
-  font-size: .8rem;
+  font-size: 1rem;
   color: white;
+  
 }
 
 .sptf-btn {
   text-transform: uppercase;
   color: white;
   font-weight: bold;
-  padding: 8px 16px;
-  background-color: rgb(48, 168, 48);
-  border-radius: 1rem;
+  padding: 1rem 3rem;
+  background-color: rgb(27,206,92);
+  border-radius: 3rem;
   transition: all 300ms ease;
+  border: none;
 }
 
 .sptf-btn:hover {
-  background-color: rgb(114, 180, 114);
+  background-color: rgb(12, 180, 74);
+  cursor: pointer;
 }
 
 
