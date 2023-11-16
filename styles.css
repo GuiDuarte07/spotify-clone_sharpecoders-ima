@@ -17,6 +17,7 @@ ul, li {
 .logo {
   width: 6rem;
   height: fit-content;
+  cursor: pointer;
 }
 
 .left-bar-icon {
@@ -59,8 +60,8 @@ ul, li {
   font-size: 0.8rem;
 }
 
-.nav-item:hover {
-  color: rgb(85, 85, 85);
+#navbar .nav-container .nav-items .nav-item:hover {
+  color: rgb(216, 215, 215);
 }
 
 #main {
@@ -122,23 +123,25 @@ ul, li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem 0 3rem 0;
 }
 
 #footer .footer-links {
-  max-width: 1024px;
+  width: 1024px;
   display: flex;
   justify-content: start;
   margin: 3rem 0;
 }
 
 #footer .footer-links .footer-link-list {
-  margin: 0 1rem;
+  margin: 0 3rem;
 }
 
 #footer .footer-links .footer-link-list .footer-link-title {
   text-transform: uppercase;
   font-weight: bold;
   color: rgb(136, 124, 124);
+  font-size: 0.9rem;
 }
 
 #footer .footer-links .footer-link-list .footer-link-items {
@@ -146,48 +149,79 @@ ul, li {
 }
 
 #footer .footer-links .footer-link-list .footer-link-items .footer-link-item {
-  font-weight: bold;
+  font-size: 0.9rem;
   color: white;
+  margin: 0.8rem 0;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+#footer .footer-links .footer-link-list .footer-link-items .footer-link-item:hover {
+  color: rgb(216, 215, 215);
 }
 
 #footer .footer-links .footer-social_media {
   flex-grow: 1;
-  height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
-  background-color: rgb(59, 61, 61);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
+/* height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: rgb(59, 61, 61); */
+
 #footer .about {
-  max-width: 1024px;
+  width: 1024px;
   display: flex;
 }
 
 #footer .about .footer-about-links {
   display: flex;
   gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 #footer .about .footer-about-links .footer-about-link {
   font-size: .8rem;
   color: rgb(136, 124, 124);
+  cursor: pointer;
 }
 
-#footer .about .footer-about-links .copyright {
+
+
+#footer .about .copyright {
   flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
 }
 
-#footer .about .footer-about-links .copyright .copyright-text {
+#footer .about .copyright .copyright-text {
   font-size: .8rem;
   color: rgb(136, 124, 124);
 }
 
 .brazil {
   display: flex;
-  gap: 1rem;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+.brazil p {
+  color: white;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .brazil-logo {
-  background: url(img/brazil.png);
-  width: 1.5rem;
+  width: 1.6rem;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  
 }
