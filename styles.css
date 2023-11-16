@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -24,6 +25,8 @@ a {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
 }
 
 #navbar .nav-items {
@@ -79,3 +82,80 @@ a {
   background-color: rgb(114, 180, 114);
 }
 
+
+
+#footer {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .footer-links {
+  max-width: 1024px;
+  display: flex;
+  justify-content: start;
+  margin: 3rem 0;
+}
+
+#footer .footer-links .footer-link-list {
+  margin: 0 1rem;
+}
+
+#footer .footer-links .footer-link-list .footer-link-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(136, 124, 124);
+}
+
+#footer .footer-links .footer-link-list .footer-link-items {
+  margin: 0.5rem 0;
+}
+
+#footer .footer-links .footer-link-list .footer-link-items .footer-link-item {
+  font-weight: bold;
+  color: white;
+}
+
+#footer .footer-links .footer-social_media {
+  flex-grow: 1;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: rgb(59, 61, 61);
+}
+
+#footer .about {
+  max-width: 1024px;
+  display: flex;
+}
+
+#footer .about .footer-about-links {
+  display: flex;
+  gap: 1rem;
+}
+
+#footer .about .footer-about-links .footer-about-link {
+
+}
+
+#footer .footer-about-links .copyright {
+  flex-grow: 1;
+}
+
+#footer .footer-about-links .copyright .copyright-text {
+  font-size: .8rem;
+  color: rgb(136, 124, 124);
+}
+
+.brazil {
+  display: flex;
+  gap: 1rem;
+}
+
+.brazil-logo {
+  background: url(img/brazil.png);
+  width: 1.5rem;
+}
